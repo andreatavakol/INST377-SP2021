@@ -3,9 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Birdwatching</title>
-    <link rel='stylesheet' href='styles.css'/>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-
+    <link rel='stylesheet' href='style.css'/>
 
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -14,60 +13,61 @@
 
   <body>
 
+    <div class="header">
       <h1>Andrea Tavakol's Lab 2</h1>
-      <img src="dove.png" alt="a simple dove logo">
+      <img src="dove.png" alt="a simple dove logo"/>
 
-
-      <ul class="nav">
+      <ul class="nav li">
         <li><span>Home</span></li>
         <li><a href="#">Get started</a></li>
         <li><a href="#">Photos</a></li>
         <li><a href="#">Gear</a></li>
         <li><a href="#">Forum</a></li>
       </ul>
+    </div>
 
-
-      <h2>Welcome</h2>
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Vestibulum faucibus egestas odio a aliquet. Proin facilisis porttitor mattis.
-        Suspendisse posuere, elit eget dapibus lobortis, justo dolor auctor nisl,
-        id sodales augue tellus sed ex. Fusce non orci nec nibh sodales tincidunt vitae eget enim.
-        Aenean ac est et augue pulvinar vehicula consectetur molestie velit.
-        Vivamus sed ullamcorper odio. Maecenas eget massa ut ipsum hendrerit
-        tristique vitae a augue. Pellentesque odio sapien, egestas nec accumsan in,
-        dictum quis lacus. Ut nec ex mi. Etiam vestibulum, turpis et placerat pharetra,
-        purus mi feugiat nibh, nec fringilla ex diam sed nibh. Donec ante quam,
-        gravida ac tincidunt nec, molestie vitae turpis. Vestibulum gravida, enim at varius finibus,
-        eros magna volutpat diam, ac posuere lacus est vel nibh. Fusce sollicitudin nisl sapien,
-        et aliquam risus feugiat in.
-      </p>
-
-      <p>
-        Mauris facilisis felis ac est efficitur, ac porta arcu porttitor.
-        Pellentesque fermentum iaculis leo nec cursus.
-        Aenean commodo, urna quis tristique porta, massa ligula faucibus massa,
-        lacinia fermentum lacus ligula sed ante. Maecenas et elementum nibh.
-        Vestibulum magna odio, cursus ac eleifend ac, tincidunt et eros.
-        Ut augue massa, tincidunt non vehicula at, hendrerit vitae magna.
-        Pellentesque sit amet iaculis ipsum. Nullam est mi, tempor sed velit sed,
-        malesuada iaculis arcu. Cras id dignissim orci, et lobortis ante.
-        Morbi vitae finibus purus. Fusce et ante ut odio rhoncus vulputate a et elit.
-      </p>
+    <div class="main">
+      <div class="section">
+        <h2 class="header">Welcome</h2>
+        <p class="article">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Vestibulum faucibus egestas odio a aliquet. Proin facilisis porttitor mattis.
+          Suspendisse posuere, elit eget dapibus lobortis, justo dolor auctor nisl,
+          id sodales augue tellus sed ex. Fusce non orci nec nibh sodales tincidunt vitae eget enim.
+          Aenean ac est et augue pulvinar vehicula consectetur molestie velit.
+          Vivamus sed ullamcorper odio. Maecenas eget massa ut ipsum hendrerit
+          tristique vitae a augue. Pellentesque odio sapien, egestas nec accumsan in,
+          dictum quis lacus. Ut nec ex mi. Etiam vestibulum, turpis et placerat pharetra,
+          purus mi feugiat nibh, nec fringilla ex diam sed nibh. Donec ante quam,
+          gravida ac tincidunt nec, molestie vitae turpis. Vestibulum gravida, enim at varius finibus,
+          eros magna volutpat diam, ac posuere lacus est vel nibh. Fusce sollicitudin nisl sapien,
+          et aliquam risus feugiat in.
+        <br/>
+        <br/>
+          Mauris facilisis felis ac est efficitur, ac porta arcu porttitor.
+          Pellentesque fermentum iaculis leo nec cursus.
+          Aenean commodo, urna quis tristique porta, massa ligula faucibus massa,
+          lacinia fermentum lacus ligula sed ante. Maecenas et elementum nibh.
+          Vestibulum magna odio, cursus ac eleifend ac, tincidunt et eros.
+          Ut augue massa, tincidunt non vehicula at, hendrerit vitae magna.
+          Pellentesque sit amet iaculis ipsum. Nullam est mi, tempor sed velit sed,
+          malesuada iaculis arcu. Cras id dignissim orci, et lobortis ante.
+          Morbi vitae finibus purus. Fusce et ante ut odio rhoncus vulputate a et elit.
+        </p>
+      </div>
       
-      
+      <div class="section">
+        <h2 class="header">Favourite photos</h2>
+        <a href="favorite-1.jpg"><img src="favorite-1_th.jpg" alt="Small black bird, black claws, long black slender beak, links to larger version of the image"></a>
+        <a href="favorite-2.jpg"><img src="favorite-2_th.jpg" alt="Top half of a pretty bird with bright blue plumage on neck, light colored beak, blue headdress, links to larger version of the image"></a>
+        <a href="favorite-3.jpg"><img src="favorite-3_th.jpg" alt="Top half of a large bird with white plumage, very long curved narrow light colored break, links to larger version of the image"></a>
+        <a href="favorite-4.jpg"><img src="favorite-4_th.jpg" alt="Large bird, mostly white plumage with black plumage on back and rear, long straight white beak, links to larger version of the image"></a>
+      </div>
+    </div>
+  
 
-      <h2>Favourite photos</h2>
-
-      <a href="favorite-1.jpg"><img src="favorite-1_th.jpg" alt="Small black bird, black claws, long black slender beak, links to larger version of the image"></a>
-      <a href="favorite-2.jpg"><img src="favorite-2_th.jpg" alt="Top half of a pretty bird with bright blue plumage on neck, light colored beak, blue headdress, links to larger version of the image"></a>
-      <a href="favorite-3.jpg"><img src="favorite-3_th.jpg" alt="Top half of a large bird with white plumage, very long curved narrow light colored break, links to larger version of the image"></a>
-      <a href="favorite-4.jpg"><img src="favorite-4_th.jpg" alt="Large bird, mostly white plumage with black plumage on back and rear, long straight white beak, links to larger version of the image"></a>
-
-
-      <p class='footer'>This website example has been written by Andrea Tavakol, 2020. Code adapted from MDN.</p>
-
-      <p class='footer'>Images are not my own.</p>
-
+    <div class="footer">
+      <p>This website example has been written by Andrea Tavakol, 2020. Code adapted from MDN.</p>
+      <p>Images are not my own.</p>
+    </div>
   </body>
 </html>

@@ -1,31 +1,35 @@
 /* || General setup */
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
 }
 
 html {
   font-size: 10px;
-
 }
 
 body {
   width: 70%;
   min-width: 800px;
   margin: 0 auto;
-  background-color: #6091C3;
+  background-color: #6091c3;
 }
 
 /* || typography */
 
-h1, h2, h3 {
-  font-family: 'Cinzel Decorative', cursive;
+h1,
+h2,
+h3 {
+  font-family: "Abril Fatface", cursive;
   color: #2a2a2a;
 }
 
-p, input, li {
-  font-family: 'Roboto Condensed', sans-serif;
+p,
+input,
+li {
+  font-family: "Roboto Condensed", sans-serif;
   color: #2a2a2a;
 }
 
@@ -34,6 +38,7 @@ h1 {
   text-align: center;
   text-shadow: 2px 2px 10px black;
   font-weight: 100;
+  padding: 20px 0 20px 10px;
 }
 
 h2 {
@@ -46,7 +51,8 @@ h3 {
   font-size: 2.2rem;
 }
 
-p, li {
+p,
+li {
   font-size: 1.6rem;
   line-height: 1.5;
 }
@@ -64,8 +70,14 @@ body > * {
   padding: 1%;
 }
 
-.main, .header, nav, .article, .aside, .footer, section {
-  background-color: rgba(0,255,0,0.5);
+.main,
+.header,
+nav,
+.article,
+.aside,
+.footer,
+section {
+  background-color: rgba(0, 255, 0, 0.5);
   padding: 1%;
 }
 
@@ -99,7 +111,8 @@ nav li {
   flex: 1;
 }
 
-nav a, nav span {
+nav a,
+nav span {
   display: inline-block;
   font-size: 2rem;
   height: 3rem;
@@ -107,7 +120,6 @@ nav a, nav span {
   text-transform: uppercase;
   text-decoration: none;
   color: black;
-
 }
 
 /* || main layout */
@@ -116,7 +128,8 @@ nav a, nav span {
   display: flex;
 }
 
-.article, .section {
+.article,
+.section {
   flex: 4;
 }
 

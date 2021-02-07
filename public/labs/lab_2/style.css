@@ -108,6 +108,7 @@ nav li {
   display: inline;
   text-align: center;
   flex: 1;
+  padding: 10px 0;
 }
 
 nav a,

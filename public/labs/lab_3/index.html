@@ -1,4 +1,47 @@
-<!-- Write an index.html file -->
-<!-- Include your stylesheet in the head -->
-<!-- Include your script.js right before the </body> tag -->
-<!-- Make a carousel of four mochi images that cycle, based on the readings from javascript.info -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div id="carousel" class="carousel center">
+            <button class="arrow back">⇠</button>
+            <div class="gallery">
+                <ul class="images">
+                    <li><img src="images/onigiri_1.png"></li>
+                    <li><img src="images/onigiri_2.png"></li>
+                    <li><img src="images/onigiri_3.png"></li>
+                    <li><img src="images/onigiri_4.png"></li>
+                    <li><img src="images/roll_1.png"></li>
+                    <li><img src="images/roll_2.png"></li>
+                    <li><img src="images/roll_3.png"></li>
+                </ul>
+            </div>
+            <button class="arrow forward">⇢</button>
+        </div>
+
+        <script>
+            let width = 72;
+            let count = 3;
+
+            let gallery = carousel.querySelector('ul');
+            let images = carousel.querySelectorAll('li');
+
+            let position = 0; // ribbon scroll position
+
+            carousel.querySelector('.back').onclick = function() {
+                position += width * count; //go left
+                position = Math.min(position, 0) // prevents going before first image
+                gallery.style.marginLeft = position + 'px';
+            };
+
+            carousel.querySelector('.forward').onclick = function() {
+                position -= width * count; // go right
+                position = Math.max(position, -width * (images.length - count)); // prevents going past last image
+                gallery.style.marginLeft = position + 'px';
+            };
+        </script>
+    </body>
+</html>

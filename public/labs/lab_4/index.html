@@ -6,29 +6,30 @@
     <link rel='stylesheet' href='styles.css'/>
   </head>
   <body>
-    <header class='placeholder'>
+    <header>
       <h1>Andrea Tavakol's Lab 4</h1>
-      <form>
+      <div class="container">
+      <form action='/api' method="POST">
         <ul class="flex-outer">
           <li>
-            <label for="first-name">First Name</label>
-            <input type="text" id="first-name" placeholder="Enter your first name here">
+            <label for="fname">First Name</label>
+            <input type="text" name ="fname" id="fname">
           </li>
           <li>
-            <label for="last-name">Last Name</label>
-            <input type="text" id="last-name" placeholder="Enter your last name here">
+            <label for="lname">Last Name</label>
+            <input type="text" name ="lname" id="lname">
           </li>
           <li>
             <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Enter your email here">
+            <input type="email" id="email">
           </li>
           <li>
             <label for="phone">Phone</label>
-            <input type="tel" id="phone" placeholder="Enter your phone here">
+            <input type="tel" id="tel">
           </li>
           <li>
-            <label for="message">Text Field</label>
-            <textarea rows="6" id="message" placeholder="This is some default message text."></textarea>
+            <label for="message">Text field</label>
+            <textarea rows="5" cols="33" id="message" placeholder="This is some default message text."></textarea>
           </li>
           <li>
             <p>Age</p>
@@ -54,6 +55,7 @@
           </li>
         </ul>
       </form>
+    </div>
     </header>
   </body>
 </html>

@@ -1,0 +1,79 @@
+body {
+  background: rgb(161, 92, 92);
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+  font-weight: normal;
+}
+
+.container {
+  position: absolute;
+  width: 80%;
+  max-width: 1200px;
+  margin-left: -40px;
+  margin-top: 20px;
+}
+
+.container * {
+  box-sizing: border-box;
+}
+
+.flex-outer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.flex-outer,
+.flex-inner {
+  list-style-type: none;
+  padding: 0;
+}
+
+.flex-outer > li:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.flex-outer li,
+.flex-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.flex-outer > li > label,
+.flex-outer li p {
+  flex: 1 0 120px;
+  max-width: 220px;
+}
+
+.flex-outer > li > label + *,
+.flex-inner {
+  flex: 1 0 220px;
+}
+
+.flex-outer li button {
+  margin-right: auto;
+  padding: 6px 20px;
+  border: none;
+  background: #f2f2f2;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  border-radius: 2px;
+}
+
+.flex-inner {
+  padding: 0 5px;
+  justify-content: space-between;
+}
+
+.flex-inner li {
+  width: 100px;
+}
+
+textarea::placeholder {
+  color: #000000;
+}

@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded' , () => {
     let birdBottom = 100
     let gravity = 2
     let isGameOver = false
-    let gap = 400
+    let gap = 430
 
     function startGame() {
         birdBottom -= gravity
@@ -40,11 +40,10 @@ document.addEventListener('DOMContentLoaded' , () => {
 
         if (!isGameOver) {
             obstacle.classList.add('obstacle')
-            obstacle.classList.add('topObstacle')
+            topObstacle.classList.add('topObstacle')
         }
-    
-        obstacle.classList.add('obstacle')
         gameDisplay.appendChild(obstacle)
+        gameDisplay.appendChild(topObstacle)
 
         obstacle.style.left = obstacleLeft + 'px'
         topObstacle.style.left = obstacleLeft + 'px'
@@ -55,13 +54,15 @@ document.addEventListener('DOMContentLoaded' , () => {
         function moveObstacle() {
             obstacleLeft -= 2
             obstacle.style.left = obstacleLeft + 'px'
+            topObstacle.style.left = obstacleLeft + 'px'
 
             if (obstacleLeft === -60) {
                 clearInterval(timerID)
                 gameDisplay.removeChild(obstacle)
+                gameDisplay.removeChild(topObstacle)
             }
-            if (obstacleLeft > 200 && obstacleLeft < 280 && birdLeft === 220 ||
-                birdBottom < obstacleBottom + 153 ||
+            if (obstacleLeft > 200 && obstacleLeft < 280 && birdLeft === 220 &&
+                (birdBottom < obstacleBottom + 153 || birdBottom > obstacleBottom + gap - 200) ||
                 birdBottom === 0) {
                 gameOver()
                 clearInterval(timerID)
@@ -75,6 +76,7 @@ document.addEventListener('DOMContentLoaded' , () => {
 
     function gameOver() {
         clearInterval(gameTimerID)
+        console.log('Game Over')
         isGameOver = true
         document.removeEventListener('keyup', control)
     }

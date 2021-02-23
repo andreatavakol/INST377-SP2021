@@ -117,6 +117,7 @@ describe('Lab 4', () => {
       });
   });
 
+<<<<<<< HEAD
   // CSS TESTS START HERE
 
   it('Your ul CSS - both .flex-outer and .flex-inner - should be set to flexbox display values', () => {
@@ -190,6 +191,9 @@ describe('Lab 4', () => {
     });
   });
 
+=======
+  // Promisified submit checker should help with race conditions
+>>>>>>> 71de18f657cb88e0e18449b2b53406b61eada9c4
   it('Should use the submit button to POST material to the /api endpoint and receive hello world back', () => {
     cy.get('form').should('have.attr', 'method', 'post');
     cy.get('form').should('have.attr', 'action', '/api');

@@ -7,7 +7,7 @@ function mapInit() {
     id: 'mapbox/streets-v11',
     tileSize: 512,
     zoomOffset: -1,
-    accessToken: 'your.mapbox.access.token'
+    accessToken: 'pk.eyJ1IjoiY2Fybml2YWxuaWdodCIsImEiOiJja203YWFubjAwdzE5Mm9wYmVma3pnM3MxIn0.oay_HR2OE6GxXc8rY_jUFg'
   }).addTo(mymap);
   return mymap;
 }
@@ -43,7 +43,7 @@ async function dataHandler(mapObjectFromFunction) {
               const regex = new RegExp(event.target.value, 'gi');
               const categoryName = place.category.replace(regex, `<span class="hl">${event.target.value}</span>`);
               return `
-                  <li class="block mt-4 py-4">
+                  <ul class="block mt-4 py-4">
                       <span class="name big">${place.name}</span><br>
                       <span class="name">${categoryName}</span>
                       <address>
@@ -51,7 +51,7 @@ async function dataHandler(mapObjectFromFunction) {
                           <span>${place.city}</span><br>
                           <span>${place.zip}</span>
                       </address>
-                  </li>
+                  </ul>
               `;
           }).join('');
           suggestions.innerHTML = html;
